@@ -2,6 +2,9 @@ import time
 from apscheduler.schedulers.blocking import BlockingScheduler
 
 import action
+from kafka_func import initTopic
+
+initTopic()
 
 sched = BlockingScheduler()
 
